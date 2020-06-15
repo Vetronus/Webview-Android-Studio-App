@@ -1,4 +1,4 @@
-package com.example.app;
+package com.carbonexam.carbonapp;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,7 +10,7 @@ class MyWebViewClient extends WebViewClient {
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         String hostname;
-        hostname = "example.com";
+        hostname = "prv.carbonexam.com";
         Uri uri = Uri.parse(url);
         if (url.startsWith("file:") || uri.getHost() != null && uri.getHost().endsWith(hostname)) {
             return false;
